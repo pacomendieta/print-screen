@@ -1,0 +1,27 @@
+.sidebar-container {
+  background-color: var(--main);
+  padding: 10px;
+}
+.sidebar-container ul li {
+  margin: 10px 0;
+  padding: 0;
+}
+.sidebar-container ul li a {
+  display: block;
+  width: 40px;
+  padding: 5px;
+  border-radius: 50px;
+}
+.sidebar-container ul li a:hover {
+  background: var(--secondary);
+}
+.sidebar-container ul li a img {
+  display: block;
+  width: 100%;
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar-container {
+    padding: 0;
+  }
+}

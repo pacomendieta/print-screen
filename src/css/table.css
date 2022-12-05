@@ -1,0 +1,33 @@
+.table-wrapper {
+  position: relative;
+}
+.table-wrapper .table {
+  width: 100%;
+  min-width: 500px;
+  display: table;
+  border-spacing: 0;
+  border-radius: 10px;
+}
+.table-wrapper .table thead {
+  background-color: var(--main);
+  color: white;
+  font-weight: 700;
+}
+.table-wrapper .table thead tr th {
+  padding: 10px;
+}
+.table-wrapper .table tbody tr {
+  background-color: #f7f7f7;
+}
+.table-wrapper .table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+.table-wrapper .table tbody tr td {
+  padding: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .table-wrapper {
+    overflow-x: auto;
+  }
+}

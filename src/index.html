@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script type="module" src="./index.js"></script>
+</head>
+<body>
+    <div class="app">
+      <div class="sidebar-container">
+        <ul class="unstyled">
+          <li>
+            <a href="#"><img src="icons/home.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="icons/dashboard.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="icons/user.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="icons/document.svg" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-container">
+        <div class="header-container">
+          <h1>Dashboard</h1>
+          <div class="user-badge">
+            <div class="profile-img">
+              <img src="images/user.jpg" alt="" />
+            </div>
+            <span>Jane Doe</span>
+          </div>
+        </div>
+        <div id="content" class="content-container">
+          <div class="row">
+            <div class="card bg-gradient take-screenshot-card">
+              <h2>Captura de pantalla</h2>
+              <div class="form-wrapper">
+                <select name="" class="select-area">
+                  <option value="" disabled>Selecciona una seccion</option>
+                  <option value="fullscreen" selected>Pantalla completa</option>
+                  <option value="content">Contenido</option>
+                  <option value="table">Tabla</option>
+                  <option value="chart">Gráfico</option>
+                </select>
+                <button class="btn with-icon tertiary capture-btn">
+                  <img src="icons/camera.svg" alt="" />
+                  <span>Realizar captura de pantalla</span>
+                </button>
+              </div>
+            </div>
+        </div>
+        <div class="footer-container">Fake Dashboard 2022 | libreriasJs</div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="content-modal card">
+        <h2>Captura de pantalla</h2>
+        <div>
+          <button class="btn save-snapshot-btn">Guardar</button>
+          <button class="btn close-modal-btn">Cerrar</button>
+        </div>
+        <hr />
+        <div class="placeholder-canvas"></div>
+      </div>
+    </div>
+  </body>
+</html>
